@@ -47,6 +47,8 @@
     <Reference Include="System.Data.Services" />
     <Reference Include="System.Data.Services.Client" />
     <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
@@ -178,59 +180,6 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201508261455268_[nothing].cs" />
-    <Compile Include="Migrations\201508261455268_[nothing].Designer.cs">
-      <DependentUpon>201508261455268_[nothing].cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201508261555236_[826151153amnothing].cs" />
-    <Compile Include="Migrations\201508261555236_[826151153amnothing].Designer.cs">
-      <DependentUpon>201508261555236_[826151153amnothing].cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201508261733332_[82615133pmnothing].cs" />
-    <Compile Include="Migrations\201508261733332_[82615133pmnothing].Designer.cs">
-      <DependentUpon>201508261733332_[82615133pmnothing].cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201508261743239_[82615143pmnothing].cs" />
-    <Compile Include="Migrations\201508261743239_[82615143pmnothing].Designer.cs">
-      <DependentUpon>201508261743239_[82615143pmnothing].cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201508270039489_[82615838pmnothing].cs" />
-    <Compile Include="Migrations\201508270039489_[82615838pmnothing].Designer.cs">
-      <DependentUpon>201508270039489_[82615838pmnothing].cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201508271416372_[827151016amnothing].cs" />
-    <Compile Include="Migrations\201508271416372_[827151016amnothing].Designer.cs">
-      <DependentUpon>201508271416372_[827151016amnothing].cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201508271432577_[827151032amnothing].cs" />
-    <Compile Include="Migrations\201508271432577_[827151032amnothing].Designer.cs">
-      <DependentUpon>201508271432577_[827151032amnothing].cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201508271547503_[827151147amnothing].cs" />
-    <Compile Include="Migrations\201508271547503_[827151147amnothing].Designer.cs">
-      <DependentUpon>201508271547503_[827151147amnothing].cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201508271750401_[82715150pmnothing].cs" />
-    <Compile Include="Migrations\201508271750401_[82715150pmnothing].Designer.cs">
-      <DependentUpon>201508271750401_[82715150pmnothing].cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201508271820213_[8271523234150pmnothing].cs" />
-    <Compile Include="Migrations\201508271820213_[8271523234150pmnothing].Designer.cs">
-      <DependentUpon>201508271820213_[8271523234150pmnothing].cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201508271929419_[82715329pmnothing].cs" />
-    <Compile Include="Migrations\201508271929419_[82715329pmnothing].Designer.cs">
-      <DependentUpon>201508271929419_[82715329pmnothing].cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201508272004059_[8271sdfsdfsd5329pmnothing].cs" />
-    <Compile Include="Migrations\201508272004059_[8271sdfsdfsd5329pmnothing].Designer.cs">
-      <DependentUpon>201508272004059_[8271sdfsdfsd5329pmnothing].cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201508272055326_[82715453pmnothing].cs" />
-    <Compile Include="Migrations\201508272055326_[82715453pmnothing].Designer.cs">
-      <DependentUpon>201508272055326_[82715453pmnothing].cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\BingSearchContainer.cs" />
     <Compile Include="Models\Car.cs" />
@@ -1095,47 +1044,6 @@
     <Content Include="fonts\glyphicons-halflings-regular.eot" />
     <Content Include="packages.config" />
     <None Include="Project_Readme.html" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="Migrations\201508261455268_[nothing].resx">
-      <DependentUpon>201508261455268_[nothing].cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201508261555236_[826151153amnothing].resx">
-      <DependentUpon>201508261555236_[826151153amnothing].cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201508261733332_[82615133pmnothing].resx">
-      <DependentUpon>201508261733332_[82615133pmnothing].cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201508261743239_[82615143pmnothing].resx">
-      <DependentUpon>201508261743239_[82615143pmnothing].cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201508270039489_[82615838pmnothing].resx">
-      <DependentUpon>201508270039489_[82615838pmnothing].cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201508271416372_[827151016amnothing].resx">
-      <DependentUpon>201508271416372_[827151016amnothing].cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201508271432577_[827151032amnothing].resx">
-      <DependentUpon>201508271432577_[827151032amnothing].cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201508271547503_[827151147amnothing].resx">
-      <DependentUpon>201508271547503_[827151147amnothing].cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201508271750401_[82715150pmnothing].resx">
-      <DependentUpon>201508271750401_[82715150pmnothing].cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201508271820213_[8271523234150pmnothing].resx">
-      <DependentUpon>201508271820213_[8271523234150pmnothing].cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201508271929419_[82715329pmnothing].resx">
-      <DependentUpon>201508271929419_[82715329pmnothing].cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201508272004059_[8271sdfsdfsd5329pmnothing].resx">
-      <DependentUpon>201508272004059_[8271sdfsdfsd5329pmnothing].cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201508272055326_[82715453pmnothing].resx">
-      <DependentUpon>201508272055326_[82715453pmnothing].cs</DependentUpon>
-    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

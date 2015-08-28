@@ -1,186 +1,167 @@
-﻿<div class="modal-header" style="background-color:#3B77DD; border-top-left-radius:25px; border-top-right-radius:25px;">
+﻿<div class="modal-header" id="carModal1_Header">
     <h3 class="modal-title">{{ mCtrl.car.car.model_year }} {{ mCtrl.car.car.make | capitalCase }} {{ mCtrl.car.car.model_name | capitalCase }} {{mCtrl.car.car.model_trim}}</h3>
 </div>
-<div class="modal-body" style="background-color:#ff6600; border-bottom-left-radius:25px; border-bottom-right-radius:25px;"><!--#3498db-->
+<div class="modal-body" id="carModal1_Body">
     <tabset>
-        <tab heading="Vehicle Info"><!-- style="background-color:white"-->
+        <tab heading="Vehicle Info">
             <div class="row">
                 <br />
-                <div class="col-sm-3" style="display:inline; text-align:left">
+                <div class="modalInfoLabel col-sm-3">
                     <b>Year</b>
                 </div>
-                <div class="col-sm-8" style="display:inline; text-align:left; margin-left:5px; color:white">
+                <div class="modalInfoContent col-sm-8">
                     {{mCtrl.car.car.model_year}}
                 </div>
             </div>
             <br />
             <div class="row">
-                <div class="col-sm-3" style="display:inline; text-align:left">
+                <div class="modalInfoLabel col-sm-3">
                     <b>Make</b>
                 </div>
-                <div class="col-sm-8" style="display:inline; text-align:left; margin-left:5px; color:white">
+                <div class="modalInfoContent col-sm-8">
                     {{mCtrl.car.car.make | capitalCase}}
                 </div>
             </div>
             <br />
             <div class="row">
-                <div class="col-sm-3" style="display:inline; text-align:left">
+                <div class="modalInfoLabel col-sm-3">
                     <b>Model</b>
                 </div>
-                <div class="col-sm-8" style="display:inline; text-align:left; margin-left:5px; color:white">
+                <div class="modalInfoContent col-sm-8">
                     {{mCtrl.car.car.model_name | capitalCase}}
                 </div>
             </div>
             <br />
             <div class="row">
-                <div class="col-sm-3" style="display:inline; text-align:left">
+                <div class="modalInfoLabel col-sm-3">
                     <b>Trim</b>
                 </div>
-                <div class="col-sm-8" style="display:inline; text-align:left; margin-left:5px; color:white">
+                <div class="modalInfoContent col-sm-8">
                     {{mCtrl.car.car.model_trim | capitalCase}}
                 </div>
             </div>
             <br />
             <div class="row">
-                <div class="col-sm-3" style="display:inline; text-align:left">
+                <div class="modalInfoLabel col-sm-3">
                     <b>Body Sytle</b>
                 </div>
-                <div class="col-sm-8" style="display:inline; text-align:left; margin-left:5px; color:white">
+                <div class="modalInfoContent col-sm-8">
                     {{mCtrl.car.car.body_style | capitalCase}}
                 </div>
             </div>
             <br />
             <div class="row">
-                <div class="col-sm-3" style="display:inline; text-align:left">
+                <div class="modalInfoLabel col-sm-3">
                     <b>Cylinders</b>
                 </div>
-                <div class="col-sm-8" style="display:inline; text-align:left; margin-left:5px; color:white">
+                <div class="modalInfoContent col-sm-8">
                     {{mCtrl.car.car.engine_num_cyl}}
                 </div>
             </div>
             <br />
             <div class="row">
-                <div class="col-sm-3" style="display:inline; text-align:left">
+                <div class="modalInfoLabel col-sm-3">
                     <b>HorsePower</b>
                 </div>
-                <div class="col-sm-8" style="display:inline; text-align:left; margin-left:5px; color:white">
+                <div class="modalInfoContent col-sm-8">
                     {{mCtrl.car.car.engine_power_ps}}
                 </div>
             </div>
             <br />
             <div class="row">
-                <div class="col-sm-3" style="display:inline; text-align:left">
+                <div class="modalInfoLabel col-sm-3">
                     <b>Fuel Type</b>
                 </div>
-                <div class="col-sm-8" style="display:inline; text-align:left; margin-left:5px; color:white">
+                <div class="modalInfoContent col-sm-8">
                     {{mCtrl.car.car.engine_fuel}}
                 </div>
             </div>
             <br />
             <div class="row">
-                <div class="col-sm-3" style="display:inline; text-align:left">
+                <div class="modalInfoLabel col-sm-3">
                     <b>Transmission</b>
                 </div>
-                <div class="col-sm-8" style="display:inline; text-align:left; margin-left:5px; color:white">
+                <div class="modalInfoContent col-sm-8">
                     {{mCtrl.car.car.transmission_type}}
                 </div>
             </div>
-            <!--<br />
-            <div class="row">
-                <div class="col-sm-3" style="display:inline; text-align:left">
-                    <b>Seats</b>
-                </div>
-                <div class="col-sm-8" style="display:inline; text-align:left; margin-left:5px; color:white">
-                    {{mCtrl.car.car.seats}}
-                </div>
-            </div>
-            <br />
-            <div class="row">
-                <div class="col-sm-3" style="display:inline; text-align:left">
-                    <b>Doors</b>
-                </div>
-                <div class="col-sm-8" style="display:inline; text-align:left; margin-left:5px; color:white">
-                    {{mCtrl.car.car.doors}}
-                </div>
-            </div>-->
         </tab>
-        <tab heading="Image"><!-- style="background-color:white"-->
-            <img class="img-responsive" ng-src="{{mCtrl.car.image}}" style="border-bottom-left-radius:15px; border-bottom-right-radius:15px;" />
+        <tab heading="Image">
+            <img class="modalImage img-responsive" ng-src="{{mCtrl.car.image}}" />
         </tab>
-        <div style="width:5px;"></div>
-        <tab heading="Recalls"><!-- style="background-color:white"-->
+        <tab heading="Recalls">
             <br />
-            <span style="color:white">There have been {{mCtrl.car.recalls.Count}} recalls for this vehicle.</span>
+            <span class="recallCount">There have been {{mCtrl.car.recalls.Count}} recalls issued for this vehicle.</span>
             <hr />
-            <div style="color:" ng-repeat="recall in mCtrl.car.recalls.Results">
+            <div ng-repeat="recall in mCtrl.car.recalls.Results">
                 <div class="row">
-                    <div class="col-sm-3" style="display:inline; text-align:left">
+                    <div class="modalInfoLabel col-sm-3">
                         <b>Manufacturer</b>
                     </div>
-                    <div class="col-sm-8" style="display:inline; text-align:left; margin-left:5px; color:white">
+                    <div class="modalInfoContent col-sm-8">
                         {{recall.Manufacturer}}
                     </div>
                 </div>
                 <br />
                 <div class="row">
-                    <div class="col-sm-3" style="display:inline; text-align:left">
+                    <div class="modalInfoLabel col-sm-3">
                         <b>NHTSA Campaign #</b>
                     </div>
-                    <div class="col-sm-8" style="display:inline; text-align:left; margin-left:5px; color:white">
+                    <div class="modalInfoContent col-sm-8">
                         {{recall.NHTSACampaignNumber}}
                     </div>
                 </div>
                 <br />
                 <div class="row">
-                    <div class="col-sm-3" style="display:inline; text-align:left">
+                    <div class="modalInfoLabel col-sm-3">
                         <b>Date</b>
                     </div>
-                    <div class="col-sm-8" style="display:inline; text-align:left; margin-left:5px; color:white">
+                    <div class="modalInfoContent col-sm-8">
                         {{recall.ReportReceivedDate}}
                     </div>
                 </div>
                 <br />
                 <div class="row">
-                    <div class="col-sm-3" style="display:inline; text-align:left">
+                    <div class="modalInfoLabel col-sm-3">
                         <b>Component</b>
                     </div>
-                    <div class="col-sm-8" style="display:inline; text-align:left; margin-left:5px; color:white">
+                    <div class="modalInfoContent col-sm-8">
                         {{recall.Component}}
                     </div>
                 </div>
                 <br />
                 <div class="row">
-                    <div class="col-sm-3" style="display:inline; text-align:left">
+                    <div class="modalInfoLabel col-sm-3">
                         <b>Summary</b>
                     </div>
-                    <div class="col-sm-8" style="display:inline; text-align:left; margin-left:5px; color:white">
+                    <div class="modalInfoContent col-sm-8">
                         {{recall.Summary}}
                     </div>
                 </div>
                 <br />
                 <div class="row">
-                    <div class="col-sm-3" style="display:inline; text-align:left">
+                    <div class="modalInfoLabel col-sm-3">
                         <b>Consequence</b>
                     </div>
-                    <div class="col-sm-8" style="display:inline; text-align:left; margin-left:5px; color:white">
+                    <div class="modalInfoContent col-sm-8">
                         {{recall.Conequence}}
                     </div>
                 </div>
                 <br />
                 <div class="row">
-                    <div class="col-sm-3" style="display:inline; text-align:left">
+                    <div class="modalInfoLabel col-sm-3">
                         <b>Remedy</b>
                     </div>
-                    <div class="col-sm-8" style="display:inline; text-align:left; margin-left:5px; color:white">
+                    <div class="modalInfoContent col-sm-8">
                         {{recall.Remedy}}
                     </div>
                 </div>
                 <br />
                 <div class="row">
-                    <div class="col-sm-3" style="display:inline; text-align:left">
+                    <div class="modalInfoLabel col-sm-3">
                         <b>Notes</b>
                     </div>
-                    <div class="col-sm-8" style="display:inline; text-align:left; margin-left:5px; color:white">
+                    <div class="modalInfoContent col-sm-8">
                         {{recall.Notes}}
                     </div>
                 </div>

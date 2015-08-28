@@ -123,7 +123,7 @@ i {
 /* HeaderWrap */
 #headerwrap {
 	/* background: url(../img/bg01.jpg) no-repeat center top; */
-	background-color: #3498db;
+	background-color: #282FAE;
 	margin-top: -20px;
 	padding-top:200px;
 	background-attachment: relative;
@@ -155,3 +155,69 @@ i {
     cursor: pointer;
 }
 
+#carModal1_Header {
+    background-color:#282FAE; 
+    border-top-left-radius:25px; 
+    border-top-right-radius:25px;
+}
+
+#carModal1_Body {
+    background-color:#FAA61A; 
+    border-bottom-left-radius:25px; 
+    border-bottom-right-radius:25px;
+}
+
+.modalInfoLabel {
+     display:inline; 
+     text-align:left;
+}
+
+.modalInfoContent {
+    display:inline; 
+    text-align:left; 
+    margin-left:5px; 
+    color:white;
+}
+
+.modalImage {
+    border-bottom-left-radius:15px; 
+    border-bottom-right-radius:15px;
+}
+
+.recallCount {
+    color:white;
+}
+
+.carIconContainer {
+    margin-left:10%; 
+    margin-top:-12%; 
+    margin-bottom:-10%; 
+    margin-right:10%; 
+    padding-left:5%;
+}
+
+.carIcon {
+    max-height:100px;
+}
+
+.homeTitleContainer {
+    margin-left:auto; 
+    margin-top:-12%; 
+    margin-bottom:-10%; 
+    margin-right:10%; 
+    padding-right:5%
+}
+
+.homeTitle {
+    color: white;
+}
+
+.tableHeadBackground {
+    background-color:#FAA61A;
+}
+
+.tableBodyBackground {
+    background-color:#128899; 
+    color:#FAA61A;
+    font-weight: 500;
+}

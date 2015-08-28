@@ -22,11 +22,11 @@
     <div id="headerwrap">
         <div class="row">
             <div class="col-lg-12 centered">
-                <div style="margin-left:10%; margin-top:-12%; margin-bottom:-10%; margin-right:10%; padding-left:5%" class="pull-left">
-                    <img src="img/car_icon_orange.png" style="max-height:100px;" />
+                <div class="carIconContainer pull-left">
+                    <img src="img/car_icon_orange.png" class="carIcon" />
                 </div>
-                <div style="margin-left:auto; margin-top:-12%; margin-bottom:-10%; margin-right:10%; padding-right:5%" class="pull-right">
-                    <h2 style="color:white"><b>CarFinder</b></h2>
+                <div class="homeTitleContainer pull-right">
+                    <h2 class="homeTitle"><b>CarFinder</b></h2>
                 </div>
             </div>
         </div>
@@ -34,24 +34,24 @@
             <div class="row">
                 <div class="col-lg-12">
                 <div>
-                    <h3 style="color:white">Choose A Vehicle</h3>
+                    <h3 class="homeTitle">Choose A Vehicle</h3>
                     <hr />
                 </div>
                     <div class="row">
                         <div class="col-lg-2">
-                            <span style="color:white"><b>Year </b></span>
+                            <span class="homeTitle"><b>Year </b></span>
                             <select ng-options="year for year in ctrl.options.years" ng-model="ctrl.selected.year" ng-change="ctrl.getMakes()"></select>
                         </div>
                         <div class="col-lg-3">
-                            <span style="color:white"><b>Make </b></span>
+                            <span class="homeTitle"><b>Make </b></span>
                             <select ng-options="make as (make | capitalCase) for make in ctrl.options.makes" ng-model="ctrl.selected.make" ng-change="ctrl.getModels()"></select>
                         </div>
                         <div class="col-lg-3">
-                            <span style="color:white"><b>Model </b></span>
+                            <span class="homeTitle"><b>Model </b></span>
                             <select ng-options="model for model in ctrl.options.models" ng-model="ctrl.selected.model" ng-change="ctrl.getTrims()"></select>
                         </div>
                         <div class="col-lg-4">
-                            <span style="color:white"><b>Trim </b></span>
+                            <span class="homeTitle"><b>Trim </b></span>
                             <select ng-options="trim for trim in ctrl.options.trims" ng-model="ctrl.selected.trim" ng-change="ctrl.getCars()"></select>
                         </div>
                     </div>
@@ -68,12 +68,12 @@
                            enable-filtering="false" enable-sorting="false"  display-align="center">
                         <thead>
                             <tr>
-                                <th field-name="computedField" display-name="Vehicle(s)" display-format="displayCar:gridItem" display-align="center"></th>
+                                <th class="tableHeadBackground" field-name="computedField" display-name="Vehicle(s)" display-format="displayCar:gridItem" display-align="center"></th>
                             </tr>
                         </thead>
                         <tbody>
                             <tr>
-                                <td field-name="computedField" ng-click="ctrl.getCar(gridItem.id)">
+                                <td class="tableBodyBackground" field-name="computedField" ng-click="ctrl.getCar(gridItem.id)">
                                     {{gridDisplayItem}}
                                 </td>
                             </tr>
