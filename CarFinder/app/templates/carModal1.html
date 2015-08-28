@@ -1,0 +1,195 @@
+﻿<div class="modal-header" style="background-color:#3B77DD; border-top-left-radius:25px; border-top-right-radius:25px;">
+    <h3 class="modal-title">{{ mCtrl.car.car.model_year }} {{ mCtrl.car.car.make | capitalCase }} {{ mCtrl.car.car.model_name | capitalCase }} {{mCtrl.car.car.model_trim}}</h3>
+</div>
+<div class="modal-body" style="background-color:#ff6600; border-bottom-left-radius:25px; border-bottom-right-radius:25px;"><!--#3498db-->
+    <tabset>
+        <tab heading="Vehicle Info"><!-- style="background-color:white"-->
+            <div class="row">
+                <br />
+                <div class="col-sm-3" style="display:inline; text-align:left">
+                    <b>Year</b>
+                </div>
+                <div class="col-sm-8" style="display:inline; text-align:left; margin-left:5px; color:white">
+                    {{mCtrl.car.car.model_year}}
+                </div>
+            </div>
+            <br />
+            <div class="row">
+                <div class="col-sm-3" style="display:inline; text-align:left">
+                    <b>Make</b>
+                </div>
+                <div class="col-sm-8" style="display:inline; text-align:left; margin-left:5px; color:white">
+                    {{mCtrl.car.car.make | capitalCase}}
+                </div>
+            </div>
+            <br />
+            <div class="row">
+                <div class="col-sm-3" style="display:inline; text-align:left">
+                    <b>Model</b>
+                </div>
+                <div class="col-sm-8" style="display:inline; text-align:left; margin-left:5px; color:white">
+                    {{mCtrl.car.car.model_name | capitalCase}}
+                </div>
+            </div>
+            <br />
+            <div class="row">
+                <div class="col-sm-3" style="display:inline; text-align:left">
+                    <b>Trim</b>
+                </div>
+                <div class="col-sm-8" style="display:inline; text-align:left; margin-left:5px; color:white">
+                    {{mCtrl.car.car.model_trim | capitalCase}}
+                </div>
+            </div>
+            <br />
+            <div class="row">
+                <div class="col-sm-3" style="display:inline; text-align:left">
+                    <b>Body Sytle</b>
+                </div>
+                <div class="col-sm-8" style="display:inline; text-align:left; margin-left:5px; color:white">
+                    {{mCtrl.car.car.body_style | capitalCase}}
+                </div>
+            </div>
+            <br />
+            <div class="row">
+                <div class="col-sm-3" style="display:inline; text-align:left">
+                    <b>Cylinders</b>
+                </div>
+                <div class="col-sm-8" style="display:inline; text-align:left; margin-left:5px; color:white">
+                    {{mCtrl.car.car.engine_num_cyl}}
+                </div>
+            </div>
+            <br />
+            <div class="row">
+                <div class="col-sm-3" style="display:inline; text-align:left">
+                    <b>HorsePower</b>
+                </div>
+                <div class="col-sm-8" style="display:inline; text-align:left; margin-left:5px; color:white">
+                    {{mCtrl.car.car.engine_power_ps}}
+                </div>
+            </div>
+            <br />
+            <div class="row">
+                <div class="col-sm-3" style="display:inline; text-align:left">
+                    <b>Fuel Type</b>
+                </div>
+                <div class="col-sm-8" style="display:inline; text-align:left; margin-left:5px; color:white">
+                    {{mCtrl.car.car.engine_fuel}}
+                </div>
+            </div>
+            <br />
+            <div class="row">
+                <div class="col-sm-3" style="display:inline; text-align:left">
+                    <b>Transmission</b>
+                </div>
+                <div class="col-sm-8" style="display:inline; text-align:left; margin-left:5px; color:white">
+                    {{mCtrl.car.car.transmission_type}}
+                </div>
+            </div>
+            <!--<br />
+            <div class="row">
+                <div class="col-sm-3" style="display:inline; text-align:left">
+                    <b>Seats</b>
+                </div>
+                <div class="col-sm-8" style="display:inline; text-align:left; margin-left:5px; color:white">
+                    {{mCtrl.car.car.seats}}
+                </div>
+            </div>
+            <br />
+            <div class="row">
+                <div class="col-sm-3" style="display:inline; text-align:left">
+                    <b>Doors</b>
+                </div>
+                <div class="col-sm-8" style="display:inline; text-align:left; margin-left:5px; color:white">
+                    {{mCtrl.car.car.doors}}
+                </div>
+            </div>-->
+        </tab>
+        <tab heading="Image"><!-- style="background-color:white"-->
+            <img class="img-responsive" ng-src="{{mCtrl.car.image}}" style="border-bottom-left-radius:15px; border-bottom-right-radius:15px;" />
+        </tab>
+        <div style="width:5px;"></div>
+        <tab heading="Recalls"><!-- style="background-color:white"-->
+            <br />
+            <span style="color:white">There have been {{mCtrl.car.recalls.Count}} recalls for this vehicle.</span>
+            <hr />
+            <div style="color:" ng-repeat="recall in mCtrl.car.recalls.Results">
+                <div class="row">
+                    <div class="col-sm-3" style="display:inline; text-align:left">
+                        <b>Manufacturer</b>
+                    </div>
+                    <div class="col-sm-8" style="display:inline; text-align:left; margin-left:5px; color:white">
+                        {{recall.Manufacturer}}
+                    </div>
+                </div>
+                <br />
+                <div class="row">
+                    <div class="col-sm-3" style="display:inline; text-align:left">
+                        <b>NHTSA Campaign #</b>
+                    </div>
+                    <div class="col-sm-8" style="display:inline; text-align:left; margin-left:5px; color:white">
+                        {{recall.NHTSACampaignNumber}}
+                    </div>
+                </div>
+                <br />
+                <div class="row">
+                    <div class="col-sm-3" style="display:inline; text-align:left">
+                        <b>Date</b>
+                    </div>
+                    <div class="col-sm-8" style="display:inline; text-align:left; margin-left:5px; color:white">
+                        {{recall.ReportReceivedDate}}
+                    </div>
+                </div>
+                <br />
+                <div class="row">
+                    <div class="col-sm-3" style="display:inline; text-align:left">
+                        <b>Component</b>
+                    </div>
+                    <div class="col-sm-8" style="display:inline; text-align:left; margin-left:5px; color:white">
+                        {{recall.Component}}
+                    </div>
+                </div>
+                <br />
+                <div class="row">
+                    <div class="col-sm-3" style="display:inline; text-align:left">
+                        <b>Summary</b>
+                    </div>
+                    <div class="col-sm-8" style="display:inline; text-align:left; margin-left:5px; color:white">
+                        {{recall.Summary}}
+                    </div>
+                </div>
+                <br />
+                <div class="row">
+                    <div class="col-sm-3" style="display:inline; text-align:left">
+                        <b>Consequence</b>
+                    </div>
+                    <div class="col-sm-8" style="display:inline; text-align:left; margin-left:5px; color:white">
+                        {{recall.Conequence}}
+                    </div>
+                </div>
+                <br />
+                <div class="row">
+                    <div class="col-sm-3" style="display:inline; text-align:left">
+                        <b>Remedy</b>
+                    </div>
+                    <div class="col-sm-8" style="display:inline; text-align:left; margin-left:5px; color:white">
+                        {{recall.Remedy}}
+                    </div>
+                </div>
+                <br />
+                <div class="row">
+                    <div class="col-sm-3" style="display:inline; text-align:left">
+                        <b>Notes</b>
+                    </div>
+                    <div class="col-sm-8" style="display:inline; text-align:left; margin-left:5px; color:white">
+                        {{recall.Notes}}
+                    </div>
+                </div>
+                <hr />
+                <br />
+            </div>
+        </tab>
+        <div class="pull-right">
+            <button class="btn btn-danger" type="button" ng-click="mCtrl.cancel()">Close</button>
+        </div>
+    </tabset>
+</div>

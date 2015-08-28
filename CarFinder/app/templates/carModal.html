@@ -1,0 +1,105 @@
+﻿<div class="modal-header" style="background-color:#3B77DD;">
+    <h3 class="modal-title">{{ mCtrl.car.car.model_year }} {{ mCtrl.car.car.make | capitalCase }} {{ mCtrl.car.car.model_name | capitalCase }} {{mCtrl.car.car.model_trim}}</h3>
+</div>
+<div class="modal-body" style="background-color:#3498db;">
+    <!--Selected: <b>{{ mCtrl.car }}</b>-->
+    <div class="row">
+        <div class="col-sm-3" style="display:inline; text-align:left">
+            <b>Year</b>
+        </div>
+        <div class="col-sm-8" style="display:inline; text-align:left; margin-left:5px; color:white">
+            {{mCtrl.car.car.model_year}}
+        </div>
+    </div>
+    <br />
+    <div class="row">
+        <div class="col-sm-3" style="display:inline; text-align:left">
+            <b>Make</b>
+        </div>
+        <div class="col-sm-8" style="display:inline; text-align:left; margin-left:5px; color:white">
+            {{mCtrl.car.car.make | capitalCase}}
+        </div>
+    </div>
+    <br />
+    <div class="row">
+        <div class="col-sm-3" style="display:inline; text-align:left">
+            <b>Model</b>
+        </div>
+        <div class="col-sm-8" style="display:inline; text-align:left; margin-left:5px; color:white">
+            {{mCtrl.car.car.model_name | capitalCase}}
+        </div>
+    </div>
+    <br />
+    <div class="row">
+        <div class="col-sm-3" style="display:inline; text-align:left">
+            <b>Trim</b>
+        </div>
+        <div class="col-sm-8" style="display:inline; text-align:left; margin-left:5px; color:white">
+            {{mCtrl.car.car.model_trim | capitalCase}}
+        </div>
+    </div>
+    <br />
+    <div class="row">
+        <div class="col-sm-3" style="display:inline; text-align:left">
+            <b>Body Sytle</b>
+        </div>
+        <div class="col-sm-8" style="display:inline; text-align:left; margin-left:5px; color:white">
+            {{mCtrl.car.car.body_style | capitalCase}}
+        </div>
+    </div>
+    <br />
+    <div class="row">
+        <div class="col-sm-3" style="display:inline; text-align:left">
+            <b>Cylinders</b>
+        </div>
+        <div class="col-sm-8" style="display:inline; text-align:left; margin-left:5px; color:white">
+            {{mCtrl.car.car.engine_num_cyl}}
+        </div>
+    </div>
+    <br />
+    <div class="row">
+        <div class="col-sm-3" style="display:inline; text-align:left">
+            <b>HorsePower</b>
+        </div>
+        <div class="col-sm-8" style="display:inline; text-align:left; margin-left:5px; color:white">
+            {{mCtrl.car.car.engine_power_ps}}
+        </div>
+    </div>
+    <br />
+    <div class="row">
+        <div class="col-sm-3" style="display:inline; text-align:left">
+            <b>Fuel Type</b>
+        </div>
+        <div class="col-sm-8" style="display:inline; text-align:left; margin-left:5px; color:white">
+            {{mCtrl.car.car.engine_fuel}}
+        </div>
+    </div>
+    <br />
+    <div class="row">
+        <div class="col-sm-3" style="display:inline; text-align:left">
+            <b>Transmission</b>
+        </div>
+        <div class="col-sm-8" style="display:inline; text-align:left; margin-left:5px; color:white">
+            {{mCtrl.car.car.transmission_type}}
+        </div>
+    </div>
+    <br />
+    <div class="row">
+        <div class="col-sm-3" style="display:inline; text-align:left">
+            <b>Seats</b>
+        </div>
+        <div class="col-sm-8" style="display:inline; text-align:left; margin-left:5px; color:white">
+            {{mCtrl.car.car.seats}}
+        </div>
+    </div>
+    <br />
+    <div class="row">
+        <div class="col-sm-3" style="display:inline; text-align:left">
+            <b>Doors</b>
+        </div>
+        <div class="col-sm-8" style="display:inline; text-align:left; margin-left:5px; color:white">
+            {{mCtrl.car.car.doors}}
+        </div>
+    </div>
+    <br />
+</div>
