@@ -205,6 +205,7 @@
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
+    <Content Include="img\car_icon_black.png" />
     <Content Include="img\car_icon_orange.png" />
     <Content Include="img\ipad-hand.png" />
     <Content Include="img\p01.png" />
@@ -264,6 +265,7 @@
     <Content Include="img\.DS_Store" />
     <Content Include="Scripts\.DS_Store" />
     <Content Include="privateCS.config" />
+    <None Include="Properties\PublishProfiles\CarFinderSO.pubxml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\i18n\angular-locale_aa-dj.js" />
     <Content Include="Scripts\i18n\angular-locale_aa-er.js" />

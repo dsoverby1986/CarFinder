@@ -123,7 +123,7 @@ i {
 /* HeaderWrap */
 #headerwrap {
 	/* background: url(../img/bg01.jpg) no-repeat center top; */
-	background-color: #282FAE;
+	background-color: white;
 	margin-top: -20px;
 	padding-top:200px;
 	background-attachment: relative;
@@ -162,7 +162,7 @@ i {
 }
 
 #carModal1_Body {
-    background-color:#FAA61A; 
+    background-color:white; 
     border-bottom-left-radius:25px; 
     border-bottom-right-radius:25px;
 }
@@ -176,7 +176,7 @@ i {
     display:inline; 
     text-align:left; 
     margin-left:5px; 
-    color:white;
+    color:black;
 }
 
 .modalImage {
@@ -185,7 +185,7 @@ i {
 }
 
 .recallCount {
-    color:white;
+    color:black;
 }
 
 .carIconContainer {
@@ -209,15 +209,15 @@ i {
 }
 
 .homeTitle {
-    color: white;
+    color: black;
 }
 
 .tableHeadBackground {
-    background-color:#FAA61A;
+    background-color:white;
 }
 
 .tableBodyBackground {
-    background-color:#128899; 
-    color:#FAA61A;
+    background-color:white; 
+    color:black;
     font-weight: 500;
 }

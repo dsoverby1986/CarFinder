@@ -4,7 +4,6 @@
             var viewModel = this;
            // $scope.viewModel = viewModel;
             viewModel.animationsEnabled = true;
-
             //$scope.$watchGroup(['viewModel.selected.year', 'viewModel.selected.make', 'viewModel.selected.model', 'viewModel.selected.trim'], function (newValue, oldValue) { viewModel.getCars() });
 
             this.selected = {
@@ -90,7 +89,6 @@
                 }
             }
             
-
             this.getCar = function (id) {
                 $modal.open({
                     templateUrl: '/app/templates/carModal1.html',
@@ -114,9 +112,6 @@
   angular.module('car-app').controller('carModalCtrl', function ($modalInstance, car) {
       this.car = car;
       console.log(car);
-      this.ok = function () {
-          $modalInstance.close();
-      };
 
       this.cancel = function () {
           $modalInstance.dismiss('cancel');

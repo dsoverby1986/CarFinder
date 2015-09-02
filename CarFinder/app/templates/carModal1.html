@@ -93,7 +93,83 @@
             <br />
             <span class="recallCount">There have been {{mCtrl.car.recalls.Count}} recalls issued for this vehicle.</span>
             <hr />
-            <div ng-repeat="recall in mCtrl.car.recalls.Results">
+            <accordion ng-repeat="recall in mCtrl.car.recalls.Results" close-others=true>
+                <accordion-group heading="{{recall.Component}}">
+                    <div class="row">
+                        <div class="modalInfoLabel col-sm-3">
+                            <b>Manufacturer</b>
+                        </div>
+                        <div class="modalInfoContent col-sm-8">
+                            {{recall.Manufacturer}}
+                        </div>
+                    </div>
+                    <br />
+                    <div class="row">
+                        <div class="modalInfoLabel col-sm-3">
+                            <b>NHTSA Campaign #</b>
+                        </div>
+                        <div class="modalInfoContent col-sm-8">
+                            {{recall.NHTSACampaignNumber}}
+                        </div>
+                    </div>
+                    <br />
+                    <div class="row">
+                        <div class="modalInfoLabel col-sm-3">
+                            <b>Date</b>
+                        </div>
+                        <div class="modalInfoContent col-sm-8">
+                            {{recall.ReportReceivedDate}}
+                        </div>
+                    </div>
+                    <br />
+                    <div class="row">
+                        <div class="modalInfoLabel col-sm-3">
+                            <b>Component</b>
+                        </div>
+                        <div class="modalInfoContent col-sm-8">
+                            {{recall.Component}}
+                        </div>
+                    </div>
+                    <br />
+                    <div class="row">
+                        <div class="modalInfoLabel col-sm-3">
+                            <b>Summary</b>
+                        </div>
+                        <div class="modalInfoContent col-sm-8">
+                            {{recall.Summary}}
+                        </div>
+                    </div>
+                    <br />
+                    <div class="row">
+                        <div class="modalInfoLabel col-sm-3">
+                            <b>Consequence</b>
+                        </div>
+                        <div class="modalInfoContent col-sm-8">
+                            {{recall.Conequence}}
+                        </div>
+                    </div>
+                    <br />
+                    <div class="row">
+                        <div class="modalInfoLabel col-sm-3">
+                            <b>Remedy</b>
+                        </div>
+                        <div class="modalInfoContent col-sm-8">
+                            {{recall.Remedy}}
+                        </div>
+                    </div>
+                    <br />
+                    <div class="row">
+                        <div class="modalInfoLabel col-sm-3">
+                            <b>Notes</b>
+                        </div>
+                        <div class="modalInfoContent col-sm-8">
+                            {{recall.Notes}}
+                        </div>
+                    </div>
+                </accordion-group>
+            </accordion>
+            </tab>
+            <!--<div ng-repeat="recall in mCtrl.car.recalls.Results">
                 <div class="row">
                     <div class="modalInfoLabel col-sm-3">
                         <b>Manufacturer</b>
@@ -168,7 +244,7 @@
                 <hr />
                 <br />
             </div>
-        </tab>
+        </tab>-->
         <div class="pull-right">
             <button class="btn btn-danger" type="button" ng-click="mCtrl.cancel()">Close</button>
         </div>

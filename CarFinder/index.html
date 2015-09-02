@@ -20,10 +20,14 @@
         </script>
     </div>
     <div id="headerwrap">
+    <div class="row">
+        <div class="col-lg-12" style="min-height:25px;">
+        </div>
+    </div>
         <div class="row">
             <div class="col-lg-12 centered">
                 <div class="carIconContainer pull-left">
-                    <img src="img/car_icon_orange.png" class="carIcon" />
+                    <img src="img/car_icon_black.png" class="carIcon" />
                 </div>
                 <div class="homeTitleContainer pull-right">
                     <h2 class="homeTitle"><b>CarFinder</b></h2>
@@ -65,7 +69,7 @@
                 <div class="col-md-7 col-md-offset-2">
                     <table class="table table-responsive table-bordered" tr-ng-grid="" items="ctrl.cars" page-items="ctrl.selected.perPage"
                            on-data-required="ctrl.getCars()" total-items="ctrl.totalItems" current-page="ctrl.selected.page" selection-mode="SingleRow"
-                           enable-filtering="false" enable-sorting="false"  display-align="center">
+                           enable-filtering="false" enable-sorting="false"  display-align="center" ng-cloak>
                         <thead>
                             <tr>
                                 <th class="tableHeadBackground" field-name="computedField" display-name="Vehicle(s)" display-format="displayCar:gridItem" display-align="center"></th>
@@ -73,7 +77,7 @@
                         </thead>
                         <tbody>
                             <tr>
-                                <td class="tableBodyBackground" field-name="computedField" ng-click="ctrl.getCar(gridItem.id)">
+                                <td class="tableBodyBackground" field-name="computedField" ng-click="ctrl.getCar(gridItem.id)" ng-cloak>
                                     {{gridDisplayItem}}
                                 </td>
                             </tr>
